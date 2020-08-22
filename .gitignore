@@ -1,0 +1,5 @@
+*.jpg
+*.mp3
+.idea
+static/env.js
+config.py

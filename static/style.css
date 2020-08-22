@@ -1,0 +1,54 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .nav-foot {
+  
+    height: 60px;
+    bottom: 0px;
+    background-color: #343A40;
+    border-top: 1px solid #f7f7f7;
+    color: #343A40;
+    position: fixed;
+    width: 100%;
+
+  }
+  
+  .foot-text{
+    height: 0px;
+    padding:20px;
+    color: #f7f7f7;
+  }
+  
+  .navbar-custom {
+    background-color: #ff5500 !important;
+  }
+
+
+
+#autoresizing { 
+    display: block; 
+    overflow: hidden; 
+    resize: none; 
+    margin: auto;
+} 
+
+#map {
+  height: 100%;
+}
+
+    /* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  display: block;
+  text-align: center;
+}

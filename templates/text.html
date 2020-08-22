@@ -1,0 +1,64 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<title>Photo to Speech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="#" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<style>
+
+</style>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Photo to Speech</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+    </div>
+  </nav>
+
+  <form method="post" action="" id="form1">
+    <textarea id="autoresizing" cols="100" name='text'>
+      {{clean_text}}     
+    </textarea>
+      <br>
+      <input type="submit" value="to speech" name="speech">
+      <input type="submit" value="to map" name="map" onClick = "toMap()">
+  </form>
+  <div class="nav-foot">
+    <p class="foot-text">
+      contact: verte709@gmail.com
+    </p>
+  </div>
+
+
+<!-- END MAIN -->
+</div>
+
+<script type="text/javascript"> 
+  textarea = document.querySelector("#autoresizing"); 
+  textarea.addEventListener('input', autoResize, false); 
+
+  function autoResize() { 
+      this.style.height = 'auto'; 
+      this.style.height = this.scrollHeight + 'px'; 
+  } 
+
+  function toMap(){
+    let action_src = "/map"
+    let form = document.getElementById('form1')
+    form.action = action_src
+  }
+</script> 
+</body>
+</html>
